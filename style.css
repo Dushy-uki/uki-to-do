@@ -1,0 +1,21 @@
+.box{
+    width: 400px;
+    margin: 20vh auto 0 auto;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+body{
+    background-color: rgb(73, 246, 246);
+}
+.int{
+    border-radius: 10px;
+}
+.impt{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
