@@ -3,27 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>to-dot</title>
+    <title>to-do</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="body">
-        <div class="box">
-            <h1>uki-to-do</h1>
+      <div class="box">
+        <h1>uki-to-do</h1>
+  
+        <input type="text" placeholder="Enter task here" class="int" id="input" />
+  
+        <select id="myDropdown">
+            <option value="medium">🟠 Medium</option>
+            <option value="low">🔴 Low</option> 
+            <option value="high">🟢 High</option>
+          </select>
           
-            <input type="text" placeholder="Enter here" class="int" id="input">
-            <select>
-                <option>Medium</option>
-                <option>Low</option>
-                <option>high</option>
-            </select>
-           <button class="btn" onclick="clickHere()" id="add">Add</button>
-          
-           <div id="check">
-           
-           </div>
-        </div>
+  
+        <button class="btn" onclick="clickHere()" id="add">Add</button><br>
+    
+        <h2>Task completed <span id="completed-count">0</span>/<span id="total-count">0</span></h2>
+
+
+  
+        <div id="check"><br></div>
+      </div>
     </div>
+  
     <script src="./script.js"></script>
 </body>
 </html>
